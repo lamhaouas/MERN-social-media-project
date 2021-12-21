@@ -1,0 +1,2 @@
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://' + process.env.DB_USER_PASSWORD + '@cluster0.fqgzg.mongodb.net/MernProjectSocialMedia?retryWrites=true&w=majority').then(() => console.log('connected to MongoDb')).catch((err) => console.log('failed to connect to MongoDb, err'))
